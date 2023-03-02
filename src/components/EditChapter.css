@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+.formEdit{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form{
+    width: 100%;
+    background-color: #1e1e1e1e;
+}
+
+.selectComic{
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 1px solid black;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.inputData{
+        background-color: transparent;
+        border: transparent;
+        border-bottom: 1px solid black;
+        outline: none;
+        width: 100%;
+        margin: 5px;
+        border-radius: 0;
+}
+
+.boton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: transparent;
+    color: white;
+    background-color: rgba(52, 211, 153, 1);
+    border-radius: 30px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.botonDelete{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: transparent;
+    color: #EE8380;
+    background-color: rgba(251, 221, 220, 1);
+    border-radius: 30px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.contenedorDeDatos p{
+    padding: 5px;
+}
+.contenedorDeDatos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    background-color: #1e1e1e1e;
+}
+
+.contenedorEditForm{
+    background-color: #1e1e1e1e;
+}
+
+@media (min-width:768px){
+    .contenedorEditForm{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .contenedorDeDatos{
+        height: 80vh;
+        width: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenedorDeDatos p{
+        padding: 5px;
+    }
+}

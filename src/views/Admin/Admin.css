@@ -1,0 +1,132 @@
+.todo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EBEBEB;
+}
+.Title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    margin: 50px;
+}
+.background{
+    background-image: url('https://images.pexels.com/photos/3182822/pexels-photo-3182822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    color: white;
+}
+.card{
+    justify-content: space-around;
+    border: 1px solid #EEEEF2;
+    margin: 0;
+    border-radius: 0;
+}
+.spaceCard{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0;
+}
+.directionCard{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.buttons{
+    margin-top: 50px;
+    width: 70%;
+    justify-content: center;
+    display: flex;
+}
+.buttonAdmin1{
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 0;
+}
+.buttonAdmin{
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 0;
+    background-color: #4338CA;
+}
+.border{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+    margin-top: -75px;
+    background-color: white;
+    height: 100%;
+    border-radius: 10px;
+}
+.entities{
+    color: #4338CA;
+    border-bottom: 3px solid #4338CA;
+    height: 25px;
+    margin-top: 5px;
+}
+.tableAdmin{
+    width: 70%;
+    display: flex;
+    padding: 20px;
+}
+.table{
+    width: 10%;
+}
+.tableMax{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imageAuthorsAdmin{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+.tableImage, .tableName, .tableDate, .tableCity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tableName{
+    width: 10%;
+}
+.tableDate{
+    width: 20%;
+}
+.tableCity{
+    width: 30%;
+}
+.tableImage{
+    width: 30%;
+}
+.companiesPng{
+    width: 20px;
+}
+.authorsPng{
+    width: 30px;
+}
+.cm-toggle {
+	-webkit-tap-highlight-color: transparent;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+    margin: 0px;
+    text-align: center;
+	
+}

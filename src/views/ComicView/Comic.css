@@ -1,0 +1,153 @@
+
+.allDivs{
+    margin-top: 10px;
+}
+.author{
+    color: #9795A4;
+}
+.companyName{
+    color: #9795A4;
+}
+.photo{
+    width: 200px;
+    margin-top: 40%;
+    border-radius: 20px;
+}
+.chapterCard{
+    margin-top: 20px;
+}
+.comic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titleComic{
+    font-size: 30px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+/*CHANGE: Titlesote?*/
+.titlesote{
+    align-items: flex-start;
+    width: 100%;
+    margin: 10px;
+}
+.ButonManga2{
+    width: 50%;
+    border-radius: 20px;
+}
+.ButonChapter2{
+    width: 50%;
+    border-radius: 20px;
+}
+.butons{
+    height: 50px;
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: #EBEBEB;
+}
+.ButonManga{
+    width: 50%;
+    border-radius: 20px;
+    margin: 0;
+}
+.ButonChapter{
+    width: 50%;
+    border-radius: 20px;
+    margin: 0;
+}
+.botonSwitch{
+    background-color: #EBEBEB;
+    color: #9D9D9D;
+    border-radius: 20px;
+    border: none;
+    padding: .5em 4em;
+    transition: .5s ease-in-out;
+    margin: 0;
+}
+.botonSwitch:hover{
+    background-color: #d8d8d8;
+}
+.botonSwitch.activeBoton{
+    background-color: #4338CA;
+    color: white;
+}
+.nextPrev{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.next, .prev{
+    background-color: var(--primary);
+    padding: 10px;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+}
+.descriptionChapter{
+    padding: 10px;
+}
+.description{
+    font-size: 15px;
+}
+.categoCom{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.categoryName{
+    font-size: 12px;
+    background-color: #FFE0DF;
+    color: #EF8481;
+    padding: 10px;
+    border-radius: 20px;
+}
+.imgChapters{
+    width: 80px;
+    border-radius: 15px;
+}
+.chapterCard{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.read{
+    color: white;
+    background-color: #4338CA;
+    padding: 1.5em 2em;
+    border-radius: 50000px;
+}
+.boxRead{
+    display: flex;
+    align-items: center;
+}
+.titleChapter{
+    margin-top: 10px;
+}
+.nextButton{
+    float: right;
+}
+@media (min-width: 768px) {
+    .photo{
+        width: 400px;
+    }
+    .categoCom{
+        width: 60%;
+    }
+    .descriptionChapter{
+        padding: 7%;
+    }
+    .chapterCard{
+        margin-top: 30px;
+    }
+    .allDivs{
+        width: 50%;
+    }
+    .botonSwitch{
+        padding: .5em 4em;
+    }
+}

@@ -1,0 +1,47 @@
+.reactions{
+    display: flex;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+}
+.imgLike{
+    height: 100px;
+    width: 100px;
+}
+.imgDislike{
+    height: 100px;
+    width: 100px;
+}
+.divReactions{
+    justify-content: center;
+    text-align: center;
+    height: 50%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+}
+.like{
+    color: white;
+    background-color: #4338CA;
+    height: 50px;
+    padding:15px;
+    border-radius: 25px;
+    width: 100px;
+}
+.dislike{
+    color: white;
+    background-color: #4338CA;
+    height: 50px;
+    padding:15px;
+    border-radius: 25px;
+    width: 100px;
+}
+.contenedorReactions{
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .divReactions{
+        margin-top: 30%;
+        margin-bottom: 20%;
+    }
+}

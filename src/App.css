@@ -1,0 +1,382 @@
+.navBarcito{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    
+  }
+  .menu{
+    background-color: rgba(255, 255, 255, 0.308);
+  }
+
+  .derecha,.izquierda{
+    background-color: transparent;
+  }
+  
+  .logo{
+      background-color: white;
+      height: 40px;
+      
+  }
+  a{
+    text-decoration: none;
+    background-color: transparent;
+    
+    
+  }
+  a:link { text-decoration: none;
+  }
+  .comi{
+      margin: 5px;
+      padding: 10px;
+      color: white;
+  
+  }
+  .opciones{
+      border-radius: 10px;
+      padding: 10px;
+    color: white;
+    background-color:  var(--primary);
+    
+    
+  }
+  
+  .section{
+      height: 100vh;
+      width: 100%;
+      background-image: url("/public/assets/bkg.png");
+      background-size:cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;    
+      color:white;
+      text-align: center;
+      
+    }
+  
+    .anuncio{
+      width: 360px;
+      height: 60px;
+      border: 1px solid white;
+      border-radius: 20px;
+      margin: 200px 0px 20px 0px;
+      display: flex;
+      text-align: center;
+      padding: 10px;
+      background-color: transparent;
+    }
+    .lorem{
+      margin: 0px 20px;
+      background-color: transparent;
+    }
+    h1{
+      margin: 20px 0px;
+      background-color: transparent;
+    }
+  .footer{
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+     
+  
+  
+  
+      
+  }
+  .suscribite{
+    border: 1px solid wheat;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    margin: 15px 10px 30px 10px;
+    padding: 15px;
+    box-shadow: 0px 0px 3px 0px black;
+    width: 300px;
+    
+}
+h2{
+    font-size: 15px;
+    display: flex;
+    margin: 0px 20px 15px 10px;
+}
+input{
+    width: 150px;
+    margin-left: 10px;
+}
+
+.form{
+    border: 1px solid rgb(114, 139, 153);
+    border-radius: 3px;
+    width: 255px;
+}
+.inputFooter{
+    border: transparent;
+}
+
+.butonSuscribe{
+    background-color: var(--primary);
+    padding: 3px;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+}
+.ancors{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 35px;
+}
+.iconos{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+.P-footer{
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.img-footer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+    color:var(--primary); 
+    width: 136px;
+    
+}
+.divImg{
+    display: flex;
+    justify-content: center;
+}
+.inga{
+    font-size: 25px;
+    border: 3px solid var(--primary);
+    height: 100%;
+    padding: 0 0.2rem;
+}
+
+
+
+/*------------------------form chapter*/
+
+.chapter{
+    background: #1e1e1e1e;
+    
+}
+
+.chapterTitulo{
+display: flex;
+justify-content: center;
+font-size: 30px;
+margin-top: 130px;
+
+}
+
+.formChapter{
+    width: 100% !important;   
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100% !important;
+
+
+}
+
+.editarcomic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20%;
+    align-items: center;
+}
+
+.seleccion{
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    justify-content:  center;
+    margin: 15px 0px;
+    border: transparent;
+    border-bottom: 1px solid black;
+    color: #555;
+    outline: none;
+}
+.send{
+    margin-bottom: 10%;
+}
+label {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 .6rem;
+    max-width: 380px;
+}
+.labelComic {
+    width: 100%;
+}
+  
+  @media (min-width:768px){
+  
+      .anuncio{
+          width: 600px;
+          padding: 15px;
+          font-size: 22px;
+          border-radius: 50px;
+      }
+  
+      .opciones{
+          border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        
+        
+      }
+  
+      .footer{
+          display: flex;
+          align-items: center;
+          
+      }
+      .suscribite{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+        border-radius: 20px;
+        width: 700px;
+    }
+      h2{
+          font-size: 20px;
+      }
+      .form{
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+        justify-content: space-between;
+
+    }
+   
+      .butonSuscribe{
+          background-color: var(--primary);
+          padding: 10px;
+          height: 40px;
+          width: 150px;
+          border-radius: 5px;
+          color: white;
+          text-align:center;
+      
+  
+      }
+      .ancorEiconos{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          width: 100%;
+      }
+      .ancors{
+          width: 18%;
+        font-size: 15px;
+        margin-right: 130px;
+         
+          
+      }
+      .iconos{
+          width: 20%;
+          justify-content: space-between;
+      }
+      .finalFooter{
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-evenly;
+         align-items: center;
+          width: 100%;
+          padding: 10px;
+      }
+
+      .editarcomic{
+        margin-top: 10%;
+      }
+      
+  
+  
+  }
+  /*------------------------form chapter*/
+  
+  .chapter{
+      background: #1e1e1e1e;
+      
+  }
+  
+  .chapterTitulo{display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin-top: 130px;
+  
+  }
+  
+  .formChapter{
+      display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  
+  }
+  
+  .inputChapter{
+      background: #1e1e1e00;
+      font-size: 15px;
+      display: flex;
+      justify-content:  center;
+      margin: 15px 0px;
+      border: transparent;
+      border-bottom: 1px solid black;
+      width: 100%;
+      outline: none;
+      padding-bottom: .3rem;
+      padding-left: .4rem;
+  }
+  .inputChapter[type="date"] {
+    width: 205px;
+  }
+  .enviar{
+      margin: 40px;
+      height: 40px;
+      width: 300px;
+      border:1px solid white;
+      border-radius: 40px;
+      font-size: 16px;
+      background-color: var(--primary);
+      color: white;
+      margin-right: 30px;
+      transition: background ease .5s;
+  }
+  .enviar:hover {
+    background-color: #3b2fC1;
+  }
+  .enviar:active {
+    background-color: #4f3dCc;
+  }
+.enviar{
+    margin: 40px;
+    height: 40px;
+    width: 300px;
+    border:1px solid white;
+    border-radius: 40px;
+    font-size: 16px;
+    background-color: var(--primary);
+    color: white;
+    margin-right: 30px;
+    
+}

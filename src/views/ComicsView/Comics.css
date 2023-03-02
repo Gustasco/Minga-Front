@@ -1,0 +1,380 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.comicsBody {
+  height: 100%;
+  width: 100%;
+  background-image: url("/public/assets/imagen\ 15.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tituloComics {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
+  margin: 160px 0px 40px;
+}
+
+.contSearch {
+  display: flex;
+  width: 320px;
+  padding: 12px;
+  justify-content: left;
+  border-radius: 30px;
+  background-color: white;
+}
+.search {
+  border: 0px solid transparent;
+  color: rgb(92, 90, 233);
+  font-size: 19px;
+  width: 100%;
+}
+
+input::placeholder {
+  padding: 10px;
+}
+
+.exploradorDeComics {
+  margin: 30px 0px 80px 0px;
+  border-radius: 40px;
+  background-color: #ebebeb;
+  padding: 12px;
+  width: 350px;
+}
+.explore {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.ancorsComics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25px 0px;
+  padding: 15px;
+}
+
+.ancorComics1,
+.ancorComics2,
+.ancorComics3 {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 3px;
+  color: white;
+}
+
+.ancorComics1 {
+  background-image: url(/public/assets/hxh.png);
+  background-size: contain;
+}
+.ancorComics2 {
+  background-image: url(/public/assets/dragonball.png);
+  background-size: contain;
+}
+.ancorComics3 {
+  background-image: url(/public/assets/onepiece.png);
+  background-size: contain;
+}
+
+.allButons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  
+}
+
+.button1,
+.button2,
+.button3,
+.button4,
+.button5,
+.button6 {
+  margin-right: 5px;
+}
+
+
+
+
+.button1 {
+  width: 70px;
+  color: #ef8481;
+  background-color: #ffe0df;
+  border-radius: 30px;
+  border: 0px solid transparent;
+  padding: 6px;
+}
+.active1{
+  background-color:#ef8481;
+  color: #ffe0df;
+}
+.button2 {
+  width: 70px;
+  color: #fc9c57;
+  background-color: #ffdfc8;
+  border-radius: 30px;
+  border: 0px solid transparent;
+  padding: 6px;
+}
+.active2{
+  background-color:#fc9c57;
+  color: #ffdfc8;
+}
+.button3 {
+  width: 70px;
+  color: #00ba88;
+  background-color: #d1fbf0;
+  border-radius: 30px;
+  border: 0px solid transparent;
+  padding: 6px;
+}
+.active3{
+  background-color:#00ba88;
+  color: #d1fbf0;
+}
+.button4 {
+  width: 70px;
+  color: #8883f0;
+  background-color: #e0dbff;
+  border-radius: 30px;
+  border: 0px solid transparent;
+  padding: 6px;
+}
+.active4{
+  background-color:#8883f0;
+  color: #e0dbff;
+}
+.button5 {
+  width: 70px;
+  color: #f083d5;
+  background-color: #ffdbfc;
+  border-radius: 30px;
+  border: 0px solid transparent;
+  padding: 6px;
+}
+.active5{
+  background-color:#f083d5;
+  color: #ffdbfc;
+}
+.button6 {
+  width: 70px;
+  color: #fcff42;
+  background-color: #fffedb;
+  border-radius: 30px;
+  border: 0px solid transparent;
+  padding: 6px;
+}
+.active6{
+  background-color:#fcff42;
+  color: #fffedb;
+}
+.card {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px -2px 38px -30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+}
+
+.textoCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  height: 100px;
+  border-left: 6px solid #8883f0;
+  margin-right: 15px;
+}
+
+.pCard {
+  color: #8883f0;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.cardIMG {
+  border-top-left-radius: 70px;
+  border-bottom-left-radius: 70px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+.buttonNext {
+  background-color: var(--primary);
+  padding: 10px;
+  margin: 5px;
+  width: 30%;
+  border: transparent;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+}
+.buttonPrev {
+  background-color: var(--primary);
+  padding: 10px;
+  margin: 5px;
+  width: 30%;
+  border: transparent;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+}
+.buttonNext:hover {
+  background-color: #83a0f0;
+  color: rgb(80, 75, 75);
+}
+.buttonPrev:hover {
+  background-color: #83a0f0;
+  color: rgb(80, 75, 75);
+}
+
+.noMore {
+  background-color: rgb(214, 98, 98);
+  padding: 10px;
+  margin: 5px;
+  width: 30%;
+  border: transparent;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+}
+
+.tituloCard{
+  color: #111;
+}
+
+/*-----------------------------------*/
+@media (min-width: 768px) {
+  .contSearch {
+    width: 50%;
+  }
+
+  .exploradorDeComics {
+    width: 700px;
+  }
+
+  .ancorComics1,
+  .ancorComics2,
+  .ancorComics3 {
+    height: 150px;
+    width: 150px;
+    font-size: 25px;
+  }
+
+  .button1,
+  .button2,
+  .button3,
+  .button4,
+  .button5,
+  .button6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 12px;
+    width: 80px;
+    margin-left: 5px;
+  }
+
+  .cardIMG {
+    height: 250px;
+    width: 250px;
+
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 120px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .textoCard {
+    height: 150px;
+  }
+
+  .tituloCard {
+    font-size: 20px;
+  }
+  .pCard {
+    font-size: 20px;
+    
+  }
+  .buttonNext,.buttonPrev,.noMore {
+    font-size: 18px;
+  }
+
+}
+
+/*---------MyReactions------------*/
+
+.favouritesBody {
+  height: 100%;
+  width: 100%;
+  background-image: url("/public/assets/favourites.png");
+  background-size:contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.buttonsFav{
+  margin: 15px 0px 0px 30px;
+}
+
+.deleteButton{
+  background-color: #FBDDDC;;
+  color: #EE8380;
+  padding: 10px;
+  border: transparent;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-left: 8px;
+}
+.readAnchor{
+  background-color: #D1FBF0;
+  color: #00BA88;
+  padding: 10px;
+  border: transparent;
+  border-radius: 20px;
+  font-size: 14px;
+
+  
+}
+
+
+
+@media (min-width: 768px) {
+
+  .deleteButton{
+    padding: 18px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .readAnchor{
+    padding: 18px;
+    border-radius: 30px;
+    font-size: 20px;
+  }
+
+}
