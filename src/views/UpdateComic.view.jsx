@@ -16,7 +16,6 @@ const UpdateComic = () => {
 	const [title, setTitle] = useState(comic?.title);
 	const [description, setDescription] = useState(comic?.description);
 	const [photo, setPhoto] = useState(comic?.photo);
-	const [category, setCategory] = useState(comic?.category_id?._id);
 	const [categories, setCategories] = useState([]);
   const [response, setResponse] = useState(null)
   const { id } = useParams()
@@ -61,7 +60,6 @@ const UpdateComic = () => {
 		let data = {
 			title,
 			description,
-			category_id: category,
 			photo
 		};
 		setResponse(await updateData(`comics/${id}`, data, token))
@@ -79,18 +77,6 @@ const UpdateComic = () => {
 						value={title}
             onChange={(e)=> setTitle(e.target.value)}
 					/>
-				</label>
-				<label className='labelComic'>
-					<select
-						name='select'
-						className='seleccion'
-						value={category}
-            onChange={(e) => setCategory(e.target.value)}>
-						<option value=''>Insert category</option>
-						{
-              categories?.map((category, index) => <option key={index} value={category._id}>{category.name}</option>)
-            }
-					</select>
 				</label>
 				<label htmlFor='Descripcion'>
 					<input

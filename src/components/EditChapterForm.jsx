@@ -19,13 +19,8 @@ const EditChaptersForm = () => {
   console.log(chaptersStore);
     const data = useRef("")
   const inputData = useRef("");
-  const [category, setCategory] = useState("");
 
   const dispatch = useDispatch();
-
-  const getValueCategory = (e) => {
-    setCategory(e.target.value);
-  };
 
   const editsChapter = async (e) => {
     e.preventDefault();
@@ -59,7 +54,6 @@ const EditChaptersForm = () => {
               <select
                 name="data"
                 className="selectComic"
-                onChange={getValueCategory}
                 ref={data}
               >
                 <option className="selecComic">Select Data</option>

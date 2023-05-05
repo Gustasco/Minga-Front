@@ -3,7 +3,6 @@ import './myComics.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import comicsActions from '../../store/comics/actions';
-import Categories from "../../components/ComicsCategories";
 import ComicsCards from '../../components/ComicsCards';
 import deleteData from '../../services/deleteData';
 import alertActions from '../../store/minga-alert/actions';
@@ -39,7 +38,6 @@ const MyComics = () => {
 
       <section>
         <div className="exploradorDeComics">
-          <Categories />
           <ComicsCards showButtons={true} handleDelete={_handleDelete} handleUpdate={_handleUpdate} />
         </div>
       </section>

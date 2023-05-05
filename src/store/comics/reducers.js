@@ -3,7 +3,7 @@ import comicsActions from "./actions";
 
 const { getComics, getMyComics } = comicsActions;
 
-const initialState = { comics: [], inputText: "", category: [] ,page:1};
+const initialState = { comics: [], inputText: "", page: 1 };
 
 const comicsReducers = createReducer(initialState, (builder) => {
   builder //contruye casos de lgca de reduccion
@@ -11,20 +11,18 @@ const comicsReducers = createReducer(initialState, (builder) => {
       let newState = {
         comics: action.payload.response.comics,
         text: action.payload.response.text,
-        category: action.payload.response.category,
-        page: action.payload.response.page
+        page: action.payload.response.page,
       };
       return newState;
     })
     .addCase(getMyComics.fulfilled, (state, action) => {
       const newState = {
         comics: action.payload.response,
-        text: '',
-        category: [],
-        page: 1
-      }
-      return newState
-    })
+        text: "",
+        page: 1,
+      };
+      return newState;
+    });
   //addCase rejected..
 });
 

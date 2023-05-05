@@ -1,73 +1,89 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../layout/Layout";
-import { Home, NewAuthor, NewComic, NewChapter, ComicsView, Pages, TestComics, ComicView, SignUp, SignIn, Profile, MyComics, UpdateComic, AdminPanel } from '../views'
-import MyReactions from "../components/MyReactions";
+import {
+  Home,
+  NewAuthor,
+  NewComic,
+  NewChapter,
+  ComicsView,
+  Pages,
+  TestComics,
+  ComicView,
+  SignUp,
+  SignIn,
+  Profile,
+  MyComics,
+  UpdateComic,
+} from "../views";
 import EditChapterForm from "../components/EditChapterForm";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <Layout />,
     children: [
       {
-        path: '/',
-        element: <Home />
-      },{
-        path: '/new-author',
-        element: <NewAuthor />
-      },{
-        path: '/new-comic',
-        element: <NewComic/>
-      },{
-        path:'/new-chapter',
-        element:<NewChapter/>
-      },{
-        path:'/comic/:id',
-        element: <ComicView/>
-      },{
-        path:'/comics',
-        element:<ComicsView/>
-      },{
-        path: '/pages/:id',
-        element: <Pages />
+        path: "/",
+        element: <Home />,
       },
       {
-        path: '/reactions/me',
-        element: <MyReactions />
+        path: "/new-author",
+        element: <NewAuthor />,
       },
       {
-        path: '/test',
-        element: <TestComics />
-      },{
-        path:"/signin",
-        element:<SignIn/>
-      },{
-        path:"/signup",
-        element:<SignUp/>
-      },{
-        path:"/profile/me",
-        element:<Profile/>
+        path: "/new-comic",
+        element: <NewComic />,
+      },
+      {
+        path: "/new-chapter",
+        element: <NewChapter />,
+      },
+      {
+        path: "/comic/:id",
+        element: <ComicView />,
+      },
+      {
+        path: "/comics",
+        element: <ComicsView />,
+      },
+      {
+        path: "/pages/:id",
+        element: <Pages />,
+      },
+      {
+        path: "/test",
+        element: <TestComics />,
+      },
+      {
+        path: "/signin",
+        element: <SignIn />,
+      },
+      {
+        path: "/signup",
+        element: <SignUp />,
+      },
+      {
+        path: "/profile/me",
+        element: <Profile />,
       },
       {
         path: "/companies/me",
-        element: <Profile/>
-      },{
+        element: <Profile />,
+      },
+      {
         path: "/edit-comics",
-        element: <MyComics />
-      }, {
+        element: <MyComics />,
+      },
+      {
         path: "/edit-comic/:id",
-        element: <UpdateComic />
+        element: <UpdateComic />,
       },
       {
-        path:"/edit-chapter",
-        element:<EditChapterForm />
+        path: "/edit-chapter",
+        element: <EditChapterForm />,
       },
-      {
-        path: "/admin",
-        element: <AdminPanel/>
-      }
-    ]
-  }
-])
+    ],
+  },
+]);
 
-export default router
+export default router;

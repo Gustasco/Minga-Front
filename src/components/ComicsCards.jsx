@@ -4,6 +4,7 @@ import { Link as Anchor } from "react-router-dom";
 
 const ComicsCards = ({ showButtons, handleDelete, handleUpdate }) => {
   const { comics } = useSelector((store) => store.comics);
+  console.log({comics})
   console.log(comics);
 
   return (
@@ -13,7 +14,6 @@ const ComicsCards = ({ showButtons, handleDelete, handleUpdate }) => {
           <div key={index} className="card">
             <div className="textoCard">
               <h2 className="tituloCard">{card.title}</h2>
-              <p className="pCard">{card.category_id.name}</p>
               {
                 showButtons ? (
                   <div className="edit-delete">
@@ -25,7 +25,7 @@ const ComicsCards = ({ showButtons, handleDelete, handleUpdate }) => {
             </div>
 
             <Anchor to={`/comic/${card._id}`} className="divCardImg">
-              <img className="cardIMG" src={card.photo} alt="" />
+              <img className="cardIMG" src={card.cover_photo} alt="" />
             </Anchor>
           </div>
         );

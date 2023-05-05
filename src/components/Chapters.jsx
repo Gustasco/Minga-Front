@@ -8,10 +8,10 @@ import { useParams } from "react-router";
 const { getChapters } = chapterActions;
 
 export default function Chapters() {
-  const chapterStore = useSelector((store) => store.chapters);
+  const chapterStore = useSelector((store) => store.comic?.comics);
   console.log(chapterStore)
   const [page, setPage] = useState(1);
-  const chapterDetail = chapterStore.chapters.response;
+  const chapterDetail = chapterStore.response.chapters;
   const dispatch = useDispatch();
   const { id } = useParams();
 
@@ -27,11 +27,11 @@ export default function Chapters() {
 
   return (
     <div className="nextPrev">
-      {chapterStore.chapters.response?.length === 0 ? (
+      {chapterStore.response?.chapters?.length === 0 ? (
         <button className="prev" onClick={prev}>Prev</button>
       ) : (
         <div>
-          {chapterStore.chapters.response?.map((chapter) => (
+          {chapterStore?.response?.chapters?.map((chapter) => (
             <ChapterCard title={chapter.title} chapterId={chapter._id} />
           ))}
           <div className="nextPrev">

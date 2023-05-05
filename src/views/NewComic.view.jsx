@@ -9,7 +9,6 @@ const NewComic = () => {
     const inputTitle = useRef("")
     const inputDescription = useRef("")
     const inputCoverPhoto = useRef("")
-    const inputCategory = useRef("")
     const { mingaAlert } = alertActions;
 	const dispatch = useDispatch();
     const _handleSubmit = async(e) => {
@@ -19,7 +18,6 @@ const NewComic = () => {
             company_id: "63ac47d8b4db2f7baacad498",
             title: inputTitle.current.value,
             description: inputDescription.current.value,
-            category: inputCategory.current.value,
             photo: inputCoverPhoto.current.value
         }
         const response = await postData('http://localhost:8080/api/comics/', data)
@@ -50,17 +48,6 @@ const NewComic = () => {
               ref={inputTitle}
               />
              </label>
-            <label className="labelComic">
-            <select name="select" className="seleccion" defaultValue={""} ref = {inputCategory} >
-                <option value="">Insert category</option>
-                <option value="63b43895ad64747abfa80a58">Shonen</option>
-                <option value="63b43895ad64747abfa80a59">Manhwa</option>
-                <option value="63b43895ad64747abfa80a5a">Marvel</option>
-                <option value="63b43895ad64747abfa80a5b">DC</option>
-                <option value="63b43895ad64747abfa80a5c">Shojo</option>
-                <option value="63b43895ad64747abfa80a5d">Seinen</option>
-            </select>
-            </label>
              <label htmlFor="Descripcion">
              <input className="inputChapter"
               type="text" 
@@ -83,4 +70,4 @@ const NewComic = () => {
     </div>
      )
     }
- export default NewComic
+export default NewComic
