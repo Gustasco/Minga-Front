@@ -8,6 +8,7 @@ const { getComic } = comicActions;
 
 const ChapterCard = ({ title, chapterId }) => {
   const comicStore = useSelector((store) => store.comic);
+  console.log(comicStore)
   const dispatch = useDispatch();
   const { id } = useParams();
   useEffect(() => {
@@ -18,7 +19,7 @@ return (
     <div className="chapterCard">
         <img
             className="imgChapters"
-            src={comicStore.comics?.response?.photo}
+            src={comicStore.comics?.response?.cover_photo}
             alt={title}
         />
         <div className="titleChapter">
